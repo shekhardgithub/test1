@@ -26,7 +26,7 @@ analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
-snapshot-paths: ["snapshots"]
+snapshot-paths: ["snapshots"] 
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
@@ -48,9 +48,15 @@ models:
       materialized: view
 =======
   jaffle_shop:   
-    marts:
+   marts:
      core: 
+<<<<<<< HEAD
        +materialized: table
     staging:
      +materialized: view     
 >>>>>>> 6024bdc0a03438c0a31bbde6a58cc15928e424a9
+=======
+      +materialized: table
+     staging:
+     +materialized: view 
+>>>>>>> 92d57e8b22629f9847e75140f36d9ac2d892f574
