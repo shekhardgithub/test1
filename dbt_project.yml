@@ -2,12 +2,20 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
+<<<<<<< HEAD
+name: 'my_new_project'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+=======
 name: 'jaffle_shop'
 version: 1.3
 
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project. 
+>>>>>>> 6024bdc0a03438c0a31bbde6a58cc15928e424a9
 profile: 'default'
 
 # These configurations specify where dbt should look for different types of files.
@@ -33,9 +41,22 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
+<<<<<<< HEAD
+  my_new_project:
+    # Applies to all files under models/example/
+    example:
+      materialized: view
+=======
   jaffle_shop:   
    marts:
      core: 
+<<<<<<< HEAD
+       +materialized: table
+    staging:
+     +materialized: view     
+>>>>>>> 6024bdc0a03438c0a31bbde6a58cc15928e424a9
+=======
       +materialized: table
      staging:
      +materialized: view 
+>>>>>>> 92d57e8b22629f9847e75140f36d9ac2d892f574
