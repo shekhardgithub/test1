@@ -1,15 +1,15 @@
-with customers as (
+ with customers as (
     select * from {{ ref('stg_customers')}}
 ),
 orders as (
     select * from {{ ref('fct_orders')}}   
 ),   
-employees as 
+employees as (
      select * from {{ref('employees')}}   
 ),
-customer_orders as (  
+customer_orders as (   
     select  
-        customer_id,
+        customer_id, 
         min(order_date) as first_order_date,
         max(order_date) as most_recent_order_date,  
         count(order_id) as number_of_orders,

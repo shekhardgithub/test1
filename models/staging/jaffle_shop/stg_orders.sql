@@ -8,4 +8,4 @@ with
     )
 
 select *
-from orders
+from orders 
