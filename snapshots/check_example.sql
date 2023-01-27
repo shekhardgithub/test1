@@ -8,7 +8,7 @@
           check_cols=['ALL']
         )
     }}
-
+ 
     select * from {{ source('jaffle_shop', 'customers') }}
 
 {% endsnapshot %} 

@@ -7,8 +7,8 @@
 
 
      {% elif target.name in ['prod'] %}  
-      
-         {{custom_schema_name | trim }}
+
+       {{custom_schema_name | trim }}
 
     {%- else -%}
 
