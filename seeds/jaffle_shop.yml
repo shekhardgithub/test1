@@ -7,4 +7,4 @@ seeds:
       - name: employee_id 
         tests:
           - unique
-          - not_null   
+          - not_null    
